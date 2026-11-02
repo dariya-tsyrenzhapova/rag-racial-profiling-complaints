@@ -1,0 +1,28 @@
+# Who Sues Over Racial Profiling? Court-complaint extraction pipeline
+# Versions for the extraction notebook (02) are pinned to match its install cell (tested in Google Colab).
+
+# LangChain stack (0.3 series)
+langchain==0.3.27
+langchain_community==0.3.27
+langchain_openai==0.3.30
+openai>=1.99.9,<2.0.0       # langchain_openai 0.3.30 requires openai < 2.0
+
+# Vector store, PDF loading, tokenization, keyword search
+chromadb==1.0.15
+pymupdf==1.26.3
+tiktoken==0.9.0
+rank_bm25==0.2.2
+
+# Reranker (cross-encoder) and data handling
+# Pre-installed in Google Colab; needed when running locally
+sentence-transformers
+torch
+pandas
+numpy
+python-dateutil
+openpyxl                    # Excel output
+
+# Sorting (01): PyMuPDF and pandas above, plus progress bars
+tqdm
+# OCR of scanned complaints (01, 02); also needs Tesseract and Ghostscript on the system
+ocrmypdf
