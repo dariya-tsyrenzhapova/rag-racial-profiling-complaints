@@ -1,0 +1,18 @@
+# Secrets
+config.json
+.env
+
+# Case-level data and private files: never commit
+*.pdf
+*.xlsx
+*.xls
+*.csv
+private_overrides.json
+*cache*.json
+_results/
+scanned_originals/
+
+# Notebook and Python clutter
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
